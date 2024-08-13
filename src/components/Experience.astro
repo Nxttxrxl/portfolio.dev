@@ -1,29 +1,40 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro"
+import Tailwind from "./icons/Tailwind.astro"
 const EXPERIENCIE = [
   {
     date: "Actualmente...",
     title: "Bootcamp Java & SpringBoot",
     company: "Campus Fundació Esplai",
-    },
+    description:
+      "Bootcamp FullStack,aprendizaje de diferentes lenguajes de programación, frameworks y stack tecnológico. Tecnologias: Java, MySQL, Springboot, Maven, HTML5, CSS3, Bootstrap, Sass, Javascript, jQuery, React, Typescript, Git, Azure, Vite, Tailwind, Notion, Trello",  link: "https://fundacionesplai.org/",
+  },
     {
       date: "Junio 2023",
       title: "Algoritmos de JavaScript y Estructuras de Datos",
       company: "Remoto (freecodecamp.org)",
+        description:
+      "En la certificación de algoritmos de JavaScript y estructuras de datos, adquirí conocimientos desde los fundamentos de JavaScript hasta la creación de algoritmos avanzados. Traté arrays, objetos y manipulación de datos, además de dos paradigmas clave: Programación Orientada a Objetos y Programación Funcional.",
+    link: "https://www.freecodecamp.org/espanol/learn/javascript-algorithms-and-data-structures/",
+  
     },
     {
       date: "Mayo 2023",
       title: "Diseño Web Responsivo",
       company: "Remoto (freecodecamp.org)",
+           description:
+      "En esta certificación de Diseño Web Adaptativo, adquirí habilidades en HTML y CSS para crear páginas web responsivas. A través de proyectos como una aplicación de fotos de gatos y un sitio de cuestionarios, dominé conceptos básicos y técnicas modernas como variables CSS y accesibilidad. Finalicé construyendo una galería de fotos con Flexbox y un diseño de artículos de revista con CSS Grid, aplicando las mejores prácticas en diseño web.",
+    link: "https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/",
     },
     {
       date: "Junio 2022",
       title: "Bachillerato",
       company: "IES Constanti",
+                 description:
+      "Bachillerato científico",
     },
 ]
 ---
-
 <ol class="relative mt-16">
   {
     EXPERIENCIE.map((experiencie) => (
@@ -33,3 +44,4 @@ const EXPERIENCIE = [
     ))
   }
 </ol>
+

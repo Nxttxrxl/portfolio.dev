@@ -1,10 +1,11 @@
 ---
 const personalImageAlt = "Anouar Kajaj"
-
 import Badge from "@/components/Badge.astro"
 import LinkedInIcon from "@/components/icons/LinkedIn.astro"
 import MailIcon from "@/components/icons/Mail.astro"
 import SocialPill from "@/components/SocialPill.astro"
+import IconCV from "./icons/IconCV.astro"
+
 
 ---
 
@@ -12,7 +13,7 @@ import SocialPill from "@/components/SocialPill.astro"
   <div class="flex gap-4 mb-4">
     <img
       class="rounded-full shadow-lg size-16"
-      src="/profile-pic-with-background.webp"
+      src="/public/assets/profile-pic-with-background.webp"
       alt={personalImageAlt}
     />
     <a
@@ -37,12 +38,20 @@ import SocialPill from "@/components/SocialPill.astro"
     mundo de las tecnologías,
     retroalimentando mi curiosidad de
     <strong>manera autodidacta</strong> por el mundo
-    del desarrollo..
+    del desarrollo.
   </p>
   <nav class="flex flex-wrap gap-4 mt-8">
     <SocialPill href="mailto:anouarkajajrosario@gmail.com">
       <MailIcon class="size-4" />
       Contáctame
+    </SocialPill>
+    <SocialPill href="https://www.linkedin.com/in/anouarkajaj/">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+    <SocialPill href="https://drive.google.com/file/d/1OegpWPVhnv2Z57FObO1gp15ENNq0PeWW/view?usp=sharing">
+      <IconCV class="size-4" />
+      Descargar CV
     </SocialPill>
   </nav>
 </div>

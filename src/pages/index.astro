@@ -5,13 +5,14 @@ import AboutMe from "@/components/AboutMe.astro"
 import Briefcase from "@/components/icons/Briefcase.astro"
 import Experience from "@/components/Experience.astro"
 import ProfileCheck from "@/components/icons/ProfileCheck.astro"
-
 import SectionContainer from "@/components/SectionContainer.astro"
 import Hero from "@/components/Hero.astro"
+
+import Projects from "@/components/Projects.astro" // recordar descomentar el codigo
 ---
 
 <Layout
-  title="Portfolio de Anouar - Estudiante de programación"
+  title="Portfolio de Anouar - Estudiante de Programación y Desarrollo de Software autodidacta"
 >
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
@@ -30,9 +31,15 @@ import Hero from "@/components/Hero.astro"
       <Experience />
     </SectionContainer>
 
-    <SectionContainer id="proyectos">
-      
-    </SectionContainer>
+<!--     <SectionContainer id="proyectos">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <CodeIcon class="size-7" />
+        Proyectos
+      </h2>
+      <Projects />
+    </SectionContainer> -->
 
     <SectionContainer id="sobre-mi">
       <h2
