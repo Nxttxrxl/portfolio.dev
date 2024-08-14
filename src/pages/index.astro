@@ -1,15 +1,15 @@
 ---
-import Layout from "@/layouts/Layout.astro"
+import Layout from "@/layouts/Layout.astro";
 
-import AboutMe from "@/components/AboutMe.astro"
-import Briefcase from "@/components/icons/Briefcase.astro"
-import Experience from "@/components/Experience.astro"
-import ProfileCheck from "@/components/icons/ProfileCheck.astro"
-import SectionContainer from "@/components/SectionContainer.astro"
-import Hero from "@/components/Hero.astro"
-import Code from "@/components/icons/Code.astro"
+import AboutMe from "@/components/AboutMe.astro";
+import Briefcase from "@/components/icons/Briefcase.astro";
+import Experience from "@/components/Experience.astro";
+import ProfileCheck from "@/components/icons/ProfileCheck.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import Hero from "@/components/Hero.astro";
+import Code from "@/components/icons/Code.astro";
 
-import Projects from "@/components/Projects.astro" // recordar descomentar el codigo
+import Projects from "@/components/Projects.astro"; // recordar descomentar el codigo
 ---
 
 <Layout
@@ -17,11 +17,10 @@ import Projects from "@/components/Projects.astro" // recordar descomentar el co
 >
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
-      <Hero>
-      </slot>
-    </Hero>
+      <Hero />
     </SectionContainer>
-    <div class="space-y-24">
+  </main>
+  <div class="space-y-24">
     <SectionContainer id="formacion">
       <h2
         class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
@@ -32,7 +31,9 @@ import Projects from "@/components/Projects.astro" // recordar descomentar el co
       <Experience />
     </SectionContainer>
 
- <SectionContainer id="proyectos">
+    <!--  
+     
+    <SectionContainer id="proyectos">
       <h2
         class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
       >
@@ -40,7 +41,9 @@ import Projects from "@/components/Projects.astro" // recordar descomentar el co
         Proyectos
       </h2>
       <Projects />
-    </SectionContainer> 
+    </SectionContainer>
+    
+    --> 
 
     <SectionContainer id="sobre-mi">
       <h2
@@ -52,5 +55,4 @@ import Projects from "@/components/Projects.astro" // recordar descomentar el co
       <AboutMe />
     </SectionContainer>
   </div>
-  </main>
 </Layout>
